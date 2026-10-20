@@ -51,6 +51,14 @@
 | Wazuh（Server / Agent） | ログの一元監視、検知ルール、アラートの分析 |
 | Markdown / VS Code | 調査記録とインシデント報告書の作成 |
 
+## 3. 端末の関係性（参考イメージ）
+
+![Blue Team演習環境の端末関係図](images/blue-team-lab-concept.svg)
+
+Kali Linuxで演習用のSSH試行や通信を発生させ、Ubuntu ServerやWindows 11に記録されたログを確認し、Blue Teamとして検知・調査・対応を行う流れを示した概念図です。pfSenseは異なるネットワーク間の通信制御・監視に使用します。
+
+**注意：** この画像は説明用の参考図であり、以下の独立したVMnet5・Wazuh Server構成の設計案と同一ではありません。実際の経路や導入済みの監視ツールを示す確定図ではありません。
+
 ## 3. ネットワーク構成（設計案）
 
 VMwareの**Host-onlyネットワーク（VMnet5）**で演習対象を接続します。
